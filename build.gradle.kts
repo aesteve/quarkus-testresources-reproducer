@@ -13,6 +13,7 @@ repositories {
 dependencies {
     implementation(enforcedPlatform("io.quarkus:quarkus-bom:1.4.2.Final"))
     implementation(kotlin("stdlib-jdk8"))
+    implementation("io.quarkus:quarkus-resteasy-jsonb")
     implementation("io.quarkus:quarkus-kotlin")
     testImplementation("io.quarkus:quarkus-junit5")
 }
