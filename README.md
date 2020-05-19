@@ -1,4 +1,7 @@
-Command: `gradle -i test`
+Command: 
+```
+gradle -i test
+```
 Output: 
 ```
 TestWithResource STANDARD_ERROR
@@ -32,7 +35,10 @@ Gradle Test Executor 10 STANDARD_ERROR
 
 ----------
 
-Command: `gradle -i clean test --tests "com.github.aesteve.quarkus.reproducers.testresources.TestWithoutResource"`
+Command: 
+```
+gradle -i clean test --tests "com.github.aesteve.quarkus.reproducers.testresources.TestWithoutResource"
+```
 Output:
 ```
 TestWithoutResource STANDARD_ERROR
