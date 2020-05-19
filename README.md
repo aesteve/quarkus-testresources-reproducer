@@ -71,3 +71,8 @@ Here it's KO: we're running a single test, and we're not expecting it to start o
 `The test resource has been started 1 times` should not appear in the logs.
 
 Note: the same happens within IntelliJIDEA since I'm using the Gradle runner to run the tests (I guess it's the default).
+
+=> That's where it gets problematic in real life for us: we have a lot of unit tests, and just a few ones actually needing testcontainers to be started / stopped.
+
+It's a pain to wait for testcontainers to be started (and a huge waste of resources...) just to check that some endpoints are running, that JWT is properly set up, etc. etc.
+Especially when we're running tests from the IDE. In the development process, we'll be running tests from the IDE, and don't really want Testcontainers to start every time we're running very simple tests.
